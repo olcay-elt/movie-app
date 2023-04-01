@@ -1,4 +1,5 @@
 import {
+    signInWithEmailAndPassword,
     GoogleAuthProvider,
     onAuthStateChanged,
     sendPasswordResetEmail,
@@ -56,14 +57,15 @@ const AuthContextProvider = ({ children }) => {
     const signIn = async (email, password) => {
         try {
             //? mevcut kullanıcının giriş yapması için kullanılan firebase metodu
-            // let userCredential = await signInWithEmailAndPassword(
-            //     auth,
-            //     email,
-            //     password
-            // );
+            let userCredential = await signInWithEmailAndPassword(
+                auth,
+                email,
+                password
+            );
+
             navigate("/");
             toastSuccessNotify("Logged in successfully!");
-            //   console.log(userCredential);
+            console.log(userCredential);
         } catch (error) {
             toastErrorNotify(error.message);
         }
