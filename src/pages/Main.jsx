@@ -1,5 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 import { MovieContext } from "../context/MovieContext";
+import { toastWarnNotify } from "../helpers/ToastNotify";
 
 /** Components */
 import MovieCard from "../components/MovieCard";
@@ -11,6 +14,7 @@ const Main = () => {
     useEffect(() => {
         getData(FEATURED_API)
     }, [])
+
 
 
     function getData(url) {
@@ -28,7 +32,6 @@ const Main = () => {
                     placeholder="Search a movie..."
                 />
                 <button className="btn-danger-bordered" type="submit">
-                    Search
                 </button>
             </form>
             <div className="flex justify-center flex-wrap">
