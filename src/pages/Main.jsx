@@ -11,6 +11,9 @@ const Main = () => {
     const { movies } = useContext(MovieContext);
     const FEATURED_API = 'https://api.themoviedb.org/3/discover/movie?api_key=68815c4fd1873452233f78017cfd779d'
 
+    useEffect(() => {
+        getData(FEATURED_API)
+    }, [])
 
 
 
