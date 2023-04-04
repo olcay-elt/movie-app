@@ -22,7 +22,9 @@ const Main = () => {
             .then(res => console.log('res: ', res))
     }
 
-    
+    console.log(movies);
+    return (
+        <>
             <form className="flex justify-center p-2">
                 <input
                     type="search"
