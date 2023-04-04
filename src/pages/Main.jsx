@@ -17,10 +17,6 @@ const Main = () => {
 
 
 
-    function getData(url) {
-        fetch(url).then(res => res.json())
-            .then(res => console.log('res: ', res))
-    }
 
     console.log(movies);
     return (
