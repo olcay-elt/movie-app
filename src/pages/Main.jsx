@@ -45,3 +45,10 @@ const Main = () => {
 };
 
 export default Main;
+
+
+import { createContext, useContext, useState } from "react";
+const UserContext = createContext();
+export const UserProvider = ({ children }) => {
+
+}
