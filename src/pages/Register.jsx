@@ -17,11 +17,7 @@ const Register = () => {
     //   password: "",
     // });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const displayName = `${firstName} ${lastName}`;
-        createUser(email, password, displayName);
-    };
+
 
     // const { email, password, firstName, lastName } = info;
     // const hadleChange = (e) =>
