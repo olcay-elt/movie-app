@@ -92,7 +92,7 @@ const Register = () => {
                     >
                         Continue with Google
                         <GoogleIcon color="currentColor" />
-                    </button>
+
                 </form>
             </div>
         </div>
