@@ -9,13 +9,7 @@ const Register = () => {
     const [password, setPassword] = useState("");
     const { createUser, signUpProvider } = useContext(AuthContext);
 
-    //* birleştirilmiş state
-    // const [info, setInfo] = useState({
-    //   firstName: "",
-    //   lastName: "",
-    //   email: "",
-    //   password: "",
-    // });
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
