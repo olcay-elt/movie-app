@@ -31,14 +31,7 @@ const Navbar = () => {
                                 data-te-dropdown-toggle-ref=""
                                 aria-expanded="false"
                             >
-                                <img
-                                    src={currentUser.photoURL || avatar}
-                                    className="rounded-full"
-                                    style={{ height: 25, width: 25 }}
-                                    alt=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer"
-                                />
+
                             </span>
                             <ul
                                 className="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
